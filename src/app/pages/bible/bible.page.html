@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot = "start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Jean Chapitre 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-list>
+  <ion-list-header> All verses for JOHN 3</ion-list-header>
+
+  <ion-item *ngFor="let verse of listVerses; let i = index" style="max-height: none;">
+    <ion-avatar slot="start">
+      <img src="assets/bible.jpeg" />
+    </ion-avatar>
+    <ion-label style="max-height: none;word-wrap: break-word; max-width: 200px;">
+      <h2>{{reference}}</h2>
+      <h3>Verse {{i+1}}</h3>
+      <p [innerText]="verse" style="max-height: none; word-wrap: break-word; white-space: normal;"></p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

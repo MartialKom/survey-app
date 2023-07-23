@@ -1,5 +1,8 @@
 {
   "name": "survey-app",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }
