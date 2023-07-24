@@ -12,6 +12,7 @@ export class IdentificationPage implements OnInit {
   public ville: String = "Yaoundé"
   public mail: String = "martialkom123@gmail.com"
   public tel: string = "+237 6 98 64 69 34"
+  public matricule: string = "CM-UDS-22SCI1814"
    
   constructor() { }
 
